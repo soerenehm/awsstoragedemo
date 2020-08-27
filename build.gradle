@@ -1,0 +1,42 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = '11'
+
+description = 'AWS Demo Project for AWS S3 with Spring Boot'
+
+ext {
+    awsVersion = '2.13.48'
+    lombokVersion = '1.18.12'
+    springVersion = '2.3.2.BUILD-SNAPSHOT'
+    junitJupiterVersion = '5.4.2'
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/milestone" }
+    maven { url "https://repo.spring.io/snapshot" }
+}
+
+dependencies {
+    implementation("software.amazon.awssdk:aws-core:${awsVersion}")
+    implementation("software.amazon.awssdk:s3:${awsVersion}")
+    implementation("org.springframework.boot:spring-boot-starter:${springVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-web:${springVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-validation:${springVersion}")
+    implementation("org.springdoc:springdoc-openapi-ui:1.4.3")
+    compileOnly("org.projectlombok:lombok:${lombokVersion}")
+    annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test:${springVersion}") {
+        exclude(module: 'junit-vintage-engine')
+    }
+    testImplementation('org.mockito:mockito-junit-jupiter:3.4.6')
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}")
+}
+
+test {
+    useJUnitPlatform()
+}
+

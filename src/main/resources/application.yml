@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: secret
+
+aws:
+  s3:
+    access_key_id: XXX
+    secret_access_key: XXX
+    endpointUrl: XXX
+    bucket: XXX
+    region: XXX
+

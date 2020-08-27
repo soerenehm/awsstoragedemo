@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "task": "Fullstack UI und API Entwicklung von Services für die Online Anzeige von Artikeln.",
+      "operations": "Fachliche Erweiterungen in Spring Microservices, Testerstellung für Front- und Backend, Planning und Estimation im Scrum Prozess",
+      "customer": "Online-Versandhandel",
+      "duration": "3 Monate, 03/2020 - 05/2020",
+      "technics": "Spring Framework, Java 11, AWS Services, Python, JavaScript, Preact, JUnit, Jasmine, TestCafe, Togglz, FreeMarker"
+    },
+    {
+      "id": 2,
+      "task": "Fachliche Erweiterungen und technische Anpassungen für die Migration und das Rollout in der Partnervermittlung.",
+      "operations": "Erstellung von Microservices mit Spring Boot, Implementierung von REST API Services, Lasttests über RabbitMQ und MongoDB Events als Jenkins Pipeline, Programm- und DB Schemaanpassungen neuer Funktionalitäten (Zeitzonen etc.), Mitarbeit am Aufbau eines Fraud Detection Frameworks",
+      "customer": "Partnervermittlung",
+      "duration": "12 Monate, 01/2019 - 12/2019",
+      "technics": "Spring Boot, Spring Framework, PostgreSQL, MongoDB, RabbitMQ, Docker Compose, Docker Swarm, Flyway, Togglz, JUnit, Mockito, Testcontainer, FreeMarker"
+    },
+    {
+      "id": 3,
+      "task": "Erweiterung und Integration einer auf REST und SOAP basierenden Spring Architektur für die Verarbeitung von JSON Daten für die App Entwicklung.",
+      "operations": "REST und SOAP Schnittstellenerweiterung und Integration, Persistenz über Spring Data und JPA, Testerstellung über MockMVC und WireMock",
+      "customer": "Telekommunikation",
+      "duration": "7 Monate, 02/2018 - 08/2018",
+      "technics": "Spring Boot, Spring Data, Java 8, REST, SOAP, JSON, MockMVC, WireMock"
+    }
+  ]
+}
